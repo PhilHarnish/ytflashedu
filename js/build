@@ -1,0 +1,13 @@
+#!/bin/sh
+
+if [ $# -eq 0 ]; then
+  # google (nonconf) settings
+  CP="/home/build/nonconf/google3/third_party/flash/mtasc/google/std9"
+  RUN="/home/build/nonconf/google3/third_party/flash/mtasc/google/"
+else
+  # my local settings
+  CP="/usr/local/mtasc/std8"
+  RUN="mtasc"
+fi
+
+$RUN -swf out.swf -version 9 -cp $CP -header 320:240:20 -main Main.as

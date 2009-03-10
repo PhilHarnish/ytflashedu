@@ -1,0 +1,30 @@
+<html><head><title>JS/AS2 comm</title>
+<script src="../lib/swfobject.js" type="text/javascript"></script>
+<script type="text/javascript">
+var flashvars = {
+  video_id: "RDfpd8GV9dI",
+  color1: 0x000001,
+  color2: 0x000010
+};
+var params = {
+};
+var attributes = {
+  bgColor: "#EEEEEE",
+  allowScriptAccess: "always",
+  allowFullScreen: "true"
+};
+
+swfobject.embedSWF("out.swf",
+                   "swf",
+                   "100%", "80%",
+                   "7.0.0",
+                   null,
+                   flashvars, params, attributes);
+</script>
+</head><body>
+
+<div id="swf">&nbsp;</div>
+<a href="javascript:document.getElementById('swf').addOutput('From JS!');void(0);">send to SWF</a>
+<p>Try <code>document.getElementById('swf').addOutput({twenty:20, ates:88, animal:"cat", map:{value:33, no:false, yes:true}})</code></p>
+
+</body>
